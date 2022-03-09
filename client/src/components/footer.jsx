@@ -9,9 +9,7 @@ export default function Footer() {
         backend, & Hosted on <span className="text-purple-300">Heroku 🚀</span>
       </p>
       <p className="mt-1">
-        Built with
-        <i className="bi bi-heart-fill text-red-500 mx-2"></i>
-        by{" "}
+        Built by{" "}
         <a
           href="https://www.linkedin.com/in/rohit-dhas-26b68215a/"
           className="text-blue-300 hover:underline hover:text-blue-500"
