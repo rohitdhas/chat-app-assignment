@@ -52,6 +52,7 @@ export default function JoinRoom() {
           type="text"
           placeholder="Username"
           required
+          value={username}
           onChange={(e) => setUsername(e.target.value)}
           className="text-white font-bold bg-slate-800 outline-none p-2 rounded-md border-2 border-slate-500 focus:border-blue-500"
         />
@@ -59,6 +60,7 @@ export default function JoinRoom() {
           type="text"
           placeholder="Room ID"
           required
+          value={room_id}
           onChange={(e) => setRoom_id(e.target.value)}
           className=" text-white font-bold bg-slate-800 my-2 outline-none p-2 rounded-md border-2 border-slate-500 focus:border-blue-500"
         />
@@ -66,6 +68,7 @@ export default function JoinRoom() {
           type="password"
           placeholder="Password"
           required
+          value={password}
           onChange={(e) => setPassword(e.target.value)}
           className=" text-white font-bold bg-slate-800 mb-2 outline-none p-2 rounded-md border-2 border-slate-500 focus:border-blue-500"
         />

@@ -21,6 +21,18 @@ code {
 
 @layer utilities {
 
+  .div-placeholder[contentEditable=true]:empty:not(:focus):before {
+      content:attr(data-text)
+  }
+
+  .mt-18 {
+    margin-top: 4.8rem;
+  }
+
+  .w-55-per {
+    width: 57%;
+  }
+
   /* Scrollbar styles */
   /* width */
   .styled-scrollbar::-webkit-scrollbar {

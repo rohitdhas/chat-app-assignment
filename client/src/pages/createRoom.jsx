@@ -55,12 +55,14 @@ export default function CreateRoom() {
           placeholder="Room Name"
           required
           onChange={(e) => setRoom_name(e.target.value)}
+          value={room_name}
           className="text-white font-bold bg-slate-800 outline-none p-2 rounded-md border-2 border-slate-500 focus:border-blue-500"
         />
         <input
           type="password"
           placeholder="Password"
           required
+          value={password}
           onChange={(e) => setPassword(e.target.value)}
           className="text-white font-bold bg-slate-800 my-2 outline-none p-2 rounded-md border-2 border-slate-500 focus:border-blue-500"
         />

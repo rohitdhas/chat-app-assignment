@@ -70,23 +70,27 @@ export default function Room() {
   }
 
   return (
-    <div className="h-screen w-screen flex align items-center justify-center bg-slate-700">
+    <>
       {isLoading ? (
-        <div className="px-6 py-2 my-2 text-white font-bold text-center bg-blue-500 rounded-md">
-          Joining Room...
-          <i className="bi bi-broadcast ml-2"></i>
+        <div className="h-screen w-screen flex align items-center justify-center bg-slate-700">
+          <div className="px-6 py-2 my-2 text-white font-bold text-center bg-blue-500 rounded-md">
+            Joining Room...
+            <i className="bi bi-broadcast ml-2"></i>
+          </div>
         </div>
       ) : (
-        <div className="h-3/4 flex w-full justify-center">
-          <Sidebar users={roomData.online_users} />
-          <ChatRoom
-            sendMessage={sendMessage}
-            leaveRoom={leaveRoom}
-            messages={messages}
-            room_name={roomData.room_name}
-          />
+        <div className="h-screen w-screen flex justify-center bg-slate-700">
+          <div className="h-3/5 flex w-full justify-center mt-18">
+            <Sidebar users={roomData.online_users} />
+            <ChatRoom
+              sendMessage={sendMessage}
+              leaveRoom={leaveRoom}
+              messages={messages}
+              room_name={roomData.room_name}
+            />
+          </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
